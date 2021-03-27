@@ -5,8 +5,8 @@ FROM webdevops/php-nginx:7.4
 #COPY . /var/www/html
 WORKDIR /app
 # Give tmp directory write permissions
-RUN mkdir /app/tmp
-RUN chmod -R 777 /app/tmp
+#RUN mkdir /tmp
+RUN chmod -R 777 /tmp
 
 # Enable Apache modules and PHP extensions
 ENV HTTPD_a2enmod 'rewrite status expires'
